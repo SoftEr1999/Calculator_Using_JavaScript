@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="css/cstyle.css">
+
+</head>
+<body>
+    
+    <div class="calculator">
+    <table>
+        <input type="text" name="entry" id="entry" value="" placeholder="0"></input>
+        <tr>
+            <th><button class="cal_buttons" onclick="perform('+')">+</button></th>
+            <th><button class="cal_buttons" onclick="perform('-')">-</button></th>
+            <th><button class="cal_buttons" onclick="perform('*')">&times;</button></th>
+            <th><button class="cal_buttons" onclick="perform('/')">&divide;</button></th>
+        </tr>
+        <tr>
+            <th><button class="cal_buttons" onclick="perform('7')">7</button></th>
+            <th><button class="cal_buttons" onclick="perform('8')">8</button></th>
+            <th><button class="cal_buttons" onclick="perform('9')">9</button></th>
+            <th rowspan="4" ><button class="cal_buttons equals" onclick=evaluateFun()>=</button></th>
+        </tr>
+        <tr>
+            <th><button class="cal_buttons" onclick="perform('4')">4</button></th>
+            <th><button class="cal_buttons" onclick="perform('5')">5</button></th>
+            <th><button class="cal_buttons" onclick="perform('6')" >6</button></th>
+            
+        </tr>
+        <tr>
+            <th><button class="cal_buttons" onclick="perform('1')">1</button></th>
+            <th><button class="cal_buttons" onclick="perform('2')">2</button></th>
+            <th><button class="cal_buttons" onclick="perform('3')">3</button></th>
+            
+        </tr>
+        <tr>
+            <th><button class="cal_buttons" onclick="perform('0')">0</button></th>
+            <th><button class="cal_buttons" onclick="perform('.')">.</button></th>
+            <th><button class="cal_buttons" onclick=clearInputBox()>AC</button></th>
+        </tr>
+    </table>
+</div>
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>

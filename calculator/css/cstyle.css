@@ -1,0 +1,33 @@
+
+body{
+    margin: 100px;
+}
+
+#entry{
+    background-color: black;
+    color: white;
+    width: 325px;
+    height: 70px;
+    font-weight: 600;
+    font-size: xx-large;
+    border-radius: 12px;
+    text-align: right;
+}
+.cal_buttons{
+    padding: 20px;
+    background-color: white;
+    color: black;
+    font-weight: 800;
+    font-size: xx-large;
+    margin: 0%;
+    cursor: pointer;
+    border-radius: 6px;
+
+}
+.equals{
+    padding: 245% 43%;
+    background-color: orange;
+    font-weight: 800;
+    font-size: xx-large;
+}
+
