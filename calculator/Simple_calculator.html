@@ -12,35 +12,35 @@
     
     <div class="calculator">
     <table>
-        <input type="text" name="entry" id="entry" value="" placeholder="0"></input>
+        <input type="text" name="entry" id="entry" value="" placeholder="0" readonly></input>
         <tr>
-            <th><button class="cal_buttons" onclick="perform('+')">+</button></th>
-            <th><button class="cal_buttons" onclick="perform('-')">-</button></th>
-            <th><button class="cal_buttons" onclick="perform('*')">&times;</button></th>
-            <th><button class="cal_buttons" onclick="perform('/')">&divide;</button></th>
+            <th class="cal_buttons op" onclick="perform('+')"><button></button>+</th>
+            <th class="cal_buttons op" onclick="perform('-')"><button></button>-</th>
+            <th class="cal_buttons op" onclick="perform('*')"><button></button>&times;</th>
+            <th class="cal_buttons op" onclick="perform('/')"><button></button>&divide;</th>
         </tr>
         <tr>
-            <th><button class="cal_buttons" onclick="perform('7')">7</button></th>
-            <th><button class="cal_buttons" onclick="perform('8')">8</button></th>
-            <th><button class="cal_buttons" onclick="perform('9')">9</button></th>
-            <th rowspan="4" ><button class="cal_buttons equals" onclick=evaluateFun()>=</button></th>
+            <th class="cal_buttons" onclick="perform('7')"><button></button>7</th>
+            <th class="cal_buttons" onclick="perform('8')"><button></button>8</th>
+            <th class="cal_buttons" onclick="perform('9')"><button></button>9</th>
+            <th rowspan="4" class="cal_buttons equals" onclick=evaluateFun()><button></button>=</th>
         </tr>
         <tr>
-            <th><button class="cal_buttons" onclick="perform('4')">4</button></th>
-            <th><button class="cal_buttons" onclick="perform('5')">5</button></th>
-            <th><button class="cal_buttons" onclick="perform('6')" >6</button></th>
+            <th class="cal_buttons" onclick="perform('4')"><button ></button>4</th>
+            <th class="cal_buttons" onclick="perform('5')"><button ></button>5</th>
+            <th class="cal_buttons" onclick="perform('6')"><button  ></button>6</th>
             
         </tr>
         <tr>
-            <th><button class="cal_buttons" onclick="perform('1')">1</button></th>
-            <th><button class="cal_buttons" onclick="perform('2')">2</button></th>
-            <th><button class="cal_buttons" onclick="perform('3')">3</button></th>
+            <th class="cal_buttons" onclick="perform('1')"><button></button>1</th>
+            <th class="cal_buttons" onclick="perform('2')"><button></button>2</th>
+            <th class="cal_buttons" onclick="perform('3')"><button></button>3</th>
             
         </tr>
         <tr>
-            <th><button class="cal_buttons" onclick="perform('0')">0</button></th>
-            <th><button class="cal_buttons" onclick="perform('.')">.</button></th>
-            <th><button class="cal_buttons" onclick=clearInputBox()>AC</button></th>
+            <th class="cal_buttons" onclick="perform('0')"><button ></button>0</th>
+            <th class="cal_buttons" onclick="perform('.')"><button ></button>.</th>
+            <th class="cal_buttons" onclick=clearInputBox()><button ></button>C</th>
         </tr>
     </table>
 </div>
