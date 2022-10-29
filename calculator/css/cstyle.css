@@ -1,33 +1,56 @@
 
+
 body{
-    margin: 100px;
+    margin: 5% 0% 0% 10%;
 }
 
 #entry{
     background-color: black;
     color: white;
-    width: 325px;
-    height: 70px;
+    max-width: 390px;
+    height: 100px;
     font-weight: 600;
-    font-size: xx-large;
+    font-size:4rem;
     border-radius: 12px;
     text-align: right;
 }
-.cal_buttons{
-    padding: 20px;
-    background-color: white;
-    color: black;
-    font-weight: 800;
+
+th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 30px;
     font-size: xx-large;
-    margin: 0%;
-    cursor: pointer;
-    border-radius: 6px;
+    font-weight: 600;
+}
+.cal_buttons{
+    border-radius: 12px;
 
 }
-.equals{
-    padding: 245% 43%;
-    background-color: orange;
-    font-weight: 800;
-    font-size: xx-large;
+.cal_buttons:active{
+    background-color: rgb(82, 80, 80);
 }
+.op{
+    background-color: rgb(169, 166, 166);
+}
+.op:hover{
+    background-color: gray;
+}
+
+.equals{
+    background-color: orange;
+}
+.equals:hover{
+    background-color: rgb(197, 129, 3);
+}
+button{
+    visibility: hidden;
+}
+.calculator{
+    border: 1px solid black;
+    display: inline-block;
+    padding: 4px;
+    border-radius: 12px;
+  
+}
+
 
